@@ -1,21 +1,15 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import s from './Navbar.module.css';
-console.log(s);
-// let s = {
-//     'nav': 'Navbar_nav__3ou9Q',
-//     'item': 'Navbar_item__3qaF3',
-//     'active' : 'Baksndakdn_actve'
- // }
-
 
 const Navbar = () => {
-    return <nav className={s.nav}>
+    return ( 
+    <nav className={s.nav}>
         <div className={s.item}>
-            <a>Profile</a>
+            <a href="/profile">Profile</a>
         </div>
         <div className={`${s.item} ${s.active}`}>
-            <a>Messages</a>
+            <a href="/dialogs">Messages</a>
         </div>
         <div className={s.item}>
             <a>News</a>
@@ -27,6 +21,7 @@ const Navbar = () => {
             <a>Settings</a>
         </div>
     </nav>
+    )
 }
 
 export default Navbar;
