@@ -9,7 +9,7 @@ const Post = (props) => {
           <img src='https://www.designevo.com/res/templates/thumb_small/black-and-white-crown-icon.png' />
           {props.message}
           <div>
-            <span> like </span>
+            <span> likes </span>
           </div>
         </div>
     )
