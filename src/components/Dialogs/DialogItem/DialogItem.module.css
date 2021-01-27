@@ -1,0 +1,6 @@
+.dialogItems {
+    padding:15px;
+}
+.dialogItems .active {
+    color:white;
+}

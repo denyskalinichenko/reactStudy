@@ -1,23 +1,7 @@
 import React from 'react';
 import s from './Dialogs.module.css';
-import { NavLink } from "react-router-dom";
-
-
-// -----------COMPONENTS---------------
-const DialogItem = (props) => {
-    let path = "/dialogs/" + props.id;
-
-    return (
-        <div className={s.dialog + ' ' + s.active}>
-            <NavLink to={path}>{props.name}</NavLink>
-        </div>
-    )
-}
-const MessageItem = (props) => {
-    return (
-        <div className={s.message}>{props.message}</div>
-    )
-}
+import DialogItem from './DialogItem/DialogsItem.jsx';
+import Message from './Messages/Message.jsx';
 
 const Dialogs = (props) => {
 
@@ -44,7 +28,7 @@ const Dialogs = (props) => {
         { id: 4, message: 'What"s up man?' }
     ]
     let messagesElements = messages.map(
-        m => <MessageItem message={m.message} />
+        m => <Message message={m.message} />
     );
 
     return (
